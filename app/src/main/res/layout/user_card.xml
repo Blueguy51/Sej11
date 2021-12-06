@@ -13,6 +13,8 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="8dp"
+        app:cardBackgroundColor="@color/hazel"
+        app:cardCornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -35,12 +37,13 @@
                 tools:srcCompat="@tools:sample/avatars" />
 
             <TextView
-                android:id="@+id/user_name"
+                android:id="@+id/card_username"
                 android:layout_width="230dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
                 android:text="USERNAME"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -49,30 +52,31 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
-                android:id="@+id/user_score"
+                android:id="@+id/card_score"
                 android:layout_width="165dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="4dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
+                android:gravity="center_vertical"
                 android:text="SCORE"
                 android:textSize="20sp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toEndOf="@+id/tag_score"
-                app:layout_constraintTop_toBottomOf="@+id/user_name" />
+                app:layout_constraintStart_toEndOf="@+id/cardtag_score"
+                app:layout_constraintTop_toBottomOf="@+id/card_username" />
 
             <TextView
-                android:id="@+id/tag_score"
+                android:id="@+id/cardtag_score"
                 android:layout_width="60dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="28dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
                 android:text="Score:"
                 android:textAlignment="textStart"
                 android:textSize="20sp"
                 app:layout_constraintStart_toEndOf="@+id/user_photo"
-                app:layout_constraintTop_toBottomOf="@+id/user_name" />
+                app:layout_constraintTop_toBottomOf="@+id/card_username" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
